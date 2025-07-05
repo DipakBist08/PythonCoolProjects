@@ -1,6 +1,6 @@
 print("Welcome to my computer quizz!!!")
-playing  = input("Do you want to play? yes/no: ")
-if playing.upper()!="YES":
+playing  = input("Do you want to play? /no: ").lower()
+if playing !="yes":
     quit()
 
 print("Okay ! Let's play : )")
@@ -36,5 +36,7 @@ if answer.lower() == "charls babbies":
     score+=1
 else:
     print("Wrong!! Give a shot one more time!!!")
-print("you got " + str(score)  +  " questions wright")
+print("you got " + str(score)  +  " questions right")
+print("you got " + str((score/4))  +  " % right")
+print("Your total score is ")
 
