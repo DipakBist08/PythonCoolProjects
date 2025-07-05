@@ -1,7 +1,6 @@
-from Quizz_Best_approach import playing
+#Quizz game using function
 
-
-def ask_questoin(question,correct_answer):
+def ask_question(question, correct_answer):
     answer = input(question+ " ").lower()
     if answer== correct_answer.lower():
         print("You got it !:)")
@@ -26,7 +25,7 @@ questions = [
     ("Who was the father of computer?", "Charles Babbage")
 ]
 for question, correct_answer in questions:
-    score +=ask_questoin(question,correct_answer)
+    score +=ask_question(question, correct_answer)
 
 
 print(f"\n you got {score} out of {len(questions)}")
