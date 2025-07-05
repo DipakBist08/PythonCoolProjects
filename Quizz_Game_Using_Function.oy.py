@@ -6,7 +6,7 @@ def ask_question(question, correct_answer):
         print("You got it !:)")
         return 1
     else:
-        print("Incorrect! Give a shot one moret ime")
+        print("Incorrect! Give a shot one more time")
         return 0
 
 
